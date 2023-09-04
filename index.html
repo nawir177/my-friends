@@ -1,109 +1,41 @@
 <!doctype html>
 <html>
 
-      <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- font indie flowe -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link
-               href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-               rel="stylesheet">
-            <!-- end font
+      <!-- font indie flowe -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet">
+      <!-- end font
              -->
-            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-            <script src="https://cdn.tailwindcss.com"></script>
-
-            <style>
-                  h2 {
-                        font-family: 'Architects Daughter', cursive;
-                        font-family: 'Inter', sans-serif;
-                  }
-            </style>
-
-      </head>
-
-      <body>
-            <button class="mt-4 mx-auto text-center flex py-2 px-4 text-2xl rounded-xl bg-pink-500 text-white font-bold border" id="playPauseButton">Play</button>
-      
-            <div id="content" class=" container p-4 max-w-sm mx-auto ">
-                  <div data-aos-duration="1000" data-aos="zoom-in"
-                     class="container my-10 w-full mx-auto p-6 rounded-xl shadow-2xl border">
-                        <div class="profile relative w-56 h-56 rounded-full mx-auto bg-pink-300">
-                        </div>
-                        <img data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="50"
-                           class="absolute -top-8 w-96 mt-6" src="img/image.png">
-                        <h2 data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100"
-                           style=" font-family: 'Architects Daughter', cursive;"
-                           class="lead mt-6 text-pink-500 text-center font-bold text-3xl mb-5">
-                              Novalia Zahra
-                        </h2>
-                        <div style=" font-family: 'Architects Daughter', cursive;"
-                           class="mt-32 h-[700px] text-justify pb-16 relative text-slate-600 w-full mx-auto bg-slate-100 rounded-2xl p-6 ">
-                           <img src="stiker/stiker1.gif" class="absolute -top-32" width="200" alt="">
-                              <p class="p1 font-bold text-md">
-
-                              </p>
-                              <p class="p2">
-
-                              </p>
-                        <img src="stiker/stiker2.gif" width="200" alt="" class="absolute bottom-0">
-                        </div>
-                  </div>
-
-            </div>
+      <script src="https://cdn.tailwindcss.com"></script>
 
 
-            <audio id="myAudio" loop class="mx-auto">
-                  <source src="music.mp3" type="audio/mp3">
-                  Your browser does not support the audio element.
-            </audio>
 
-            <script>
-                  // Dapatkan elemen audio
-                  var audio = document.getElementById('myAudio');
-                  var playPauseButton = document.getElementById('playPauseButton');
-                  var isPlaying = false;
-                  var content = document.getElementById('content');
+   </head>
 
-                  // Fungsi untuk memulai atau menghentikan pemutaran musik
-                  function togglePlay() {
-             
-                  audio.play();
-                        if (isPlaying) {
-                              audio.pause();
-                              playPauseButton.textContent = 'Play';
-                        } else {
-                              audio.play();
-                              playPauseButton.textContent = 'Pause';
-                        }
-                        isPlaying = !isPlaying;
-                  }
-
-                  // Tambahkan event listener ke tombol
-                  playPauseButton.addEventListener('click', togglePlay);
-            </script>
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-            <script src="dist/js/script.js"></script>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                  AOS.init();
-            </script>
-            <!-- gsap link -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
-            <script>
-                  let p1 = "Ini Zahra...👋👋";
-                  let p2 = "Sahabat dari awal masuk kuliah, jadi anak ini sebenarnya asik, baik, perhatian, Tapi suka ngeselin dan gak pernah mau ngalah kalo masalah debat, yahh udh gk bisa di hindarin lah yah, kalo Cowo pasti selalu selalu di mata Cewo. selain ngeselin kadang dia tuh cerewet, dan bisa ada masalah kampus, pasti gw terlibat, dan gk akan pernah lepas... mau lari... pasti di kejar, walaupun sampai ujung duniapun, dan zahra ini orang juga manja, tapi gengsi, dan keras kepala, lebih keras dari batu wkwk, klo di bilangin dan menurut dia benar, pasti tetap benar, dan kalo salah, pasti ngeyel dan gw sama iki yang kena gaplakkk 💥💥 ";
-                  gsap.registerPlugin(TextPlugin);
-                  gsap.to('.p1', { duration: 2, delay: 3, text: p1 });
-                  gsap.to('.p2', { duration: 55, delay: 5, text: p2 });
-            </script>
-
-      </body>
+   <body>
+      <div class="container mx-auto max-w-sm p-4 h-[750px] bg-cover" style="background-image: url('img/wall.jpg');">
+         <h1 class="mt-8 mx-auto text-4xl text-center font-bold text-slate-700" style="font-family: 'Architects Daughter', cursive">My Best
+            Friends</h1>
+         <div class="mt-32 mx-auto">
+            <a href="zahra.html"
+               class="mx-auto opacity-60 px-4 flex justify-center text-center border-2 border-white font-serif py-2 text-3xl text-white bg-blue-600 hover:bg-blue-700 rounded-full">Novalia
+               Zahra </a>
+         </div>
+         <div class="mt-4 mx-auto">
+            <a href="rizky.html"
+               class="mx-auto px-4 flex justify-center opacity-60 text-center border-2 border-white font-serif py-2 text-3xl text-white bg-blue-600 hover:bg-blue-700 rounded-full">Rizki
+               Arfiansyah </a>
+         </div>
+      </div>
+   </body>
 
 </html>
